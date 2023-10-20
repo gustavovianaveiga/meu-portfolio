@@ -1,0 +1,148 @@
+:root {
+    --primary-color: #7c5bff;
+    --secound-color: rgb(0, 0, 0);
+    --background-color: #141414;
+    --background-secound-color: #dfdfdf;
+    --text-color: rgb(215, 215, 215);
+    --white-color: rgba(108, 108, 108, 0.532);
+    --black-color: #161616;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400&display=swap');
+
+* {
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+
+body {
+    background-color: #141414;
+}
+
+:focus-visible {
+    outline: none;
+}
+
+::-webkit-scrollbar {
+    width: 3px;
+    height: 3px;
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar-track {
+    background: #353535;
+    border-radius: 15px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgb(12, 12, 12);
+    border-radius: 15px;
+    border: 2px solid #353535;
+}
+
+:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 30px var(--background-color) inset;
+    -webkit-text-fill-color: var(--text-color) !important;
+}
+
+.HeaderPrincipal {
+    padding: 30px 5%;
+    background-color: var(--background-color);
+
+}
+
+.laptop {
+    width: 400px;
+}
+
+.footerPrincipal {
+    padding: 40px 5%;
+    background-color: var(--background-color);
+}
+
+.meuNomeLogoHeader,
+.meuNomeLogoFooter,
+.navlinks {
+    color: var(--text-color);
+    transition: all .1s linear;
+}
+
+.navlinks {
+    padding: 10px 0;
+    margin: 0 15px;
+    border-bottom: 0px solid var(--primary-color);
+
+
+}
+
+.github {
+    color: var(--text-color);
+}
+
+.githubIcon,
+.linkedinIcon,
+.emailIcon {
+    font-size: 1.5rem;
+}
+
+.navlinks:hover {
+    border-bottom: 1px solid var(--primary-color);
+}
+
+address li {
+    margin: 10px 0;
+}
+
+
+.logoHeader,
+.logoFooter {
+    width: 60px;
+}
+
+.inicioContentText {
+    color: var(--text-color);
+    width: 528px
+}
+
+.minhasTecnologiasInicioText {
+    color: var(--primary-color);
+}
+
+.tituloInicio {
+    font-size: 1.2rem;
+}
+
+#inicio {
+    height: 500px;
+    padding: 200px 5% 0 5%;
+}
+
+.tecnologiaBox {
+    height: 300px;
+    padding: 0 5%;
+}
+
+.waveFinal {
+    transform: rotate(180deg);
+
+}
+
+#minhasTecnologias {
+    background: var(--background-secound-color);
+}
+
+
+
+@media (max-width: 768px) {
+    .laptop {
+        display: none;
+    }
+
+    #inicio {
+        justify-content: center;
+    }
+
+}
